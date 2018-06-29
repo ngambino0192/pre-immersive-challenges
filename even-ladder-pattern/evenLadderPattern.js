@@ -6,14 +6,12 @@ module.exports = function evenLadderPattern(num) {
     return '';
   }
   var myArray = new Array(num);
-
     for (i=0; i<=myArray.length; i++){
       myArray[i] = i++;
     }
     // console.log(myArray); // create array of numbers
 
   var evenArray = [];
-
     for (i=0; i<myArray.length; i++){
       if (myArray[i] % 2 === 0 && myArray[i] != 0){
         evenArray.push(myArray[i]);
@@ -42,5 +40,5 @@ module.exports = function evenLadderPattern(num) {
     }
     // console.log(evenStrArray.join('\n')) // create ladder pattern
     return evenStrArray.join('\n');
-    
+
 }
