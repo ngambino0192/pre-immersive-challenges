@@ -1,8 +1,6 @@
 module.exports = function findTheLongestWord(sen) {
   // write your code in here
-  // console.log(sen);
-
-  
+  console.log(sen);  
   for (i=0; i<sen.length; i++){
     var longestWord = [];
     // console.log(sen[i].length);
@@ -13,6 +11,4 @@ module.exports = function findTheLongestWord(sen) {
       return result.toString();
     }
   }
-
-
 }
